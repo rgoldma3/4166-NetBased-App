@@ -28,51 +28,45 @@ function findById(id) {
 //To do: implement save(course)
 function save(course){
     courses.push(course);
-    return courses;
 }
 
 //To do: implement findByPrefix(prefix)
 function findByPrefix(prefex){
-    for(var i = 0; i < courses.length; i++){
+    const l = [];
+    for(i = 0; i < courses.length; i++){
         if(courses[i].prefix == prefex){
-            console.log(courses[i]);
-            return true;
-        }
-        else{
-            return false;
+            l.push(courses[i]);
         }
     }
-
+    return l;
 }
 
 //To do: implement updateById(id, course)
 function updateById(id, course){
-    for(var i=0; i < courses.length; i++){
+    for(i = 0; i < courses.length; i++){
         if(courses[i].id == id){
-            courses[i].id = id;
+            courses[i].prefix = course.prefix;
+            courses[i].id = course.id;
+            courses[i].title = course.title;
             return true;
         }else{
-            return false;
+            return false; //Id was not found, return false
         }
     }
 }
 
 //To do: implement removeById(id)
 function removeById(id){
-    id = this.id;
-    for(var i=0; i < courses.length; i++){
+    for(i = 0; i < courses.length; i++){
         if(courses[i].id == id){
-            courses.slice(courses[i]);
+            courses.splice(i, 1); //slice or "remove" course by Id and return true to confirm
             return true;
-        } else{
-            return false;
         }
     }
+    return false; // Id was not found, return false
 }
 
 //To do: uncommet the following testing code when you are ready to test your functions
-
-
 save({ prefix: 'ITIS', id: 5250, title: 'Computer forensics' });
 save({ prefix: 'ITIS', id: 6220, title: 'Data privacy' });
 save({ prefix: 'ITIS', id: 6420, title: 'Usable security and privacy' });
