@@ -1,20 +1,29 @@
 
-nav{
-    display:flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #C0C0C0; 
+.topNav{
+    background-color:  #6C6A61; 
     font-family: 'Optima', sans-serif;
+    text-align: right;
+    overflow: hidden;
+    justify-content: space-around;
+    font-size: 20px;
 }
 .logo{
     float: left;
 }
-.nav-links li{
-    list-style: none;
-}
-.nav-links a{
-    color:#C0C0C0;
-    font-weight: bold;
+
+.topNav a{
+    background-color: #6C6A61; 
+    color: white;
     text-decoration: none;
+    float: right;
+    text-align:center;
+    padding: 14px 16px;
+    letter-spacing: 2px;
 
 }
+.topnav a.spotLite{
+    background-color: #EDE4E3;
+    color:#080000;
+}
+
+
