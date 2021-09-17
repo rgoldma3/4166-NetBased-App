@@ -1,6 +1,6 @@
 
 .topNav{
-    background-color:  #6C6A61; 
+    background-color:  #BDC3CB; 
     font-family: 'Optima', sans-serif;
     text-align: right;
     overflow: hidden;
@@ -12,7 +12,7 @@
 }
 
 .topNav a{
-    background-color: #6C6A61; 
+    background-color: #BDC3CB; 
     color: white;
     text-decoration: none;
     float: right;
@@ -26,4 +26,13 @@
     color:#080000;
 }
 
+.foot{
+    background-color: #bdc3cbaf;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
 
