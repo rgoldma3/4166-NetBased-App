@@ -1,3 +1,7 @@
+*{
+    font-family: 'Optima', sans-serif;
+    letter-spacing: 1.5px;
+}
 
 .topNav{
     background-color:  #BDC3CB; 
@@ -36,3 +40,23 @@
     width: 100%;
 }
 
+.newProgramForm{
+    background-color: #CCAFA5;
+    position: fixed;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 800px;
+}
+
+input[type=text], input[type=number], input[type=datetime-local], option, select,textarea, option{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: horizontal;
+}
