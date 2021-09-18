@@ -141,6 +141,67 @@ section .floorWide ul li .timeDate{
     height: 120px;
 }
 /*Program Details*/
+section .dets{
+    background-color: #A49665;
+    position: fixed;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 800px;
+    height: 60%;
+}
+
+/*Home*/
+.column {
+    float: left;
+    padding: 5px;
+    flex: 33.33%;
+    width: 30%;
+    height: 30%;
+  }
+  
+  .welcome img{
+      height: 40px;
+      width: 40px;
+  }
+  .row{
+      display: flex;
+      box-sizing: border-box;
+
+  }
+
+  .gallary{
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -5%;
+    bottom: 5%;
+    float: center;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+  }
+  .welcome h4{
+      text-align: center;
+  }
+  .welcome p{
+    text-align: center;
+    position: fixed;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 5px black;
+    padding: 20px;
+    margin-bottom: 800px;
+    height: 60%;
+  }
+  .welcome ul{
+      padding: 80px;
+      text-align: center;
+      text-decoration: none;
+}
 
 /*
 section .floorWide ul li .timeDate a{
