@@ -1,8 +1,9 @@
 *{
     font-family: 'Optima', sans-serif;
     letter-spacing: 1.5px;
+    box-sizing: border-box;
 }
-
+/*Navigation Bar*/
 .topNav{
     background-color:  #BDC3CB; 
     font-family: 'Optima', sans-serif;
@@ -26,22 +27,26 @@
 
 }
 .topnav a.spotLite{
-    background-color: #EDE4E3;
+    background-color: #d4cdb6;
     color:#080000;
 }
 
+/*footer*/
 .foot{
     background-color: #bdc3cbaf;
     position: fixed;
     left: 0;
     bottom: 0;
     text-align: center;
+    float: center;
     color: black;
     width: 100%;
-}
+    font-size: 10px;
 
+}
+/*form page*/
 .newProgramForm{
-    background-color: #CCAFA5;
+    background-color: #A49665;
     position: fixed;
     text-align: center;
     width: 50%;
@@ -49,6 +54,13 @@
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 800px;
+    height: 100%;
+}
+.newPTitle h2{
+    text-align: center;
+}
+.newPTitle p{
+    text-align: center;
 }
 
 input[type=text], input[type=number], input[type=datetime-local], option, select,textarea, option{
@@ -60,3 +72,84 @@ input[type=text], input[type=number], input[type=datetime-local], option, select
     margin-bottom: 16px;
     resize: horizontal;
 }
+/*Program List*/
+h2{
+    text-align: center;
+}
+section .hallwide{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #c0b795a6;
+    float: right;
+    box-sizing: border-box;
+} 
+section .hallwide ul{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+}
+section .hallwide ul li{
+    list-style: none;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 120px;
+    width: 200%;
+}
+section .hallwide ul li .timeDate{
+    position: relative;
+    padding: 20px;
+    background:#BDC3CB;
+    box-sizing: border-box;
+    text-align: center;
+    width: 30%;
+    float: left;
+    height: 120px;
+}
+section .floorWide{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #b7ac85ce;
+    float: left;
+    box-sizing: border-box;
+}
+section .floorWide ul{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+}
+section .floorWide ul li{
+    list-style: none;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 120px;
+    width: 200%;
+}
+section .floorWide ul li .timeDate{
+    position: relative;
+    padding: 20px;
+    background:#BDC3CB;
+    box-sizing: border-box;
+    text-align: center;
+    width: 30%;
+    float: left;
+    height: 120px;
+}
+/*Program Details*/
+
+/*
+section .floorWide ul li .timeDate a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    border: 2px solid black;
+    background-color: #fff;
+    margin-top: 15px;
+    font-size: 12px;
+} */

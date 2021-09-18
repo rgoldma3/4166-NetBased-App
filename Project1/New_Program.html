@@ -18,8 +18,10 @@
             <a href = "Programs_list.html">Program List</a>
             <a href = "Index.html">Home</a>
         </div>
-        <h4>New Program</h4>
-        <p>Adding a new program to the calendar? Fill this form out in completion. </p>
+        <div class = "newPTitle">
+            <h2>New Program</h2>
+            <p>Adding a new program to the calendar? Fill this form out in completion. </p>
+        </div>
         <div class = "newProgramForm">
             <form> 
                 <label for="fname">First Name</label>
@@ -49,10 +51,6 @@
                     <!--East Village-->
                     <option value="Elm">Elm Hall</option>
                     <option value="GV1">Greek Village House 1</option>
-                    <option value="GV10">GV House 10 Kappa Delta</option>
-                    <option value="GV11">GV House 11 Sigma Kappa</option>
-                    <option value="GV12">GV House 12</option>
-                    <option value="GV13">GV House 13 Delta Zeta</option>
                     <option value="GV2">GV House 2</option>
                     <option value="GV3">GV House 3 Zeta Tau Alpha</option>
                     <option value="GV4">GV House 4</option>
@@ -61,10 +59,31 @@
                     <option value="GV7">GV House 7 Chi Omega House</option>
                     <option value="GV8">GV House 8 Kappa Delta</option>
                     <option value="GV9">GV House 9 Global Gateways</option>
+                    <option value="GV10">GV House 10 Kappa Delta</option>
+                    <option value="GV11">GV House 11 Sigma Kappa</option>
+                    <option value="GV12">GV House 12</option>
+                    <option value="GV13">GV House 13 Delta Zeta</option>
                     <option value="Hawthorn">Hawthorn Hall</option>
                     <option value="Martin">Martin Hall</option>
                     <option value="Oak">Oak Hall</option>
                     <option value="Pine">Pine Hall</option>
+                </select>
+                <label for ="learningGoal">Learning Goal</label> 
+                <select>
+                    <option value="academic">Academic Success</option>
+                    <option value="admin">Admin</option>
+                    <option value="community">Community Responsibility </option>
+                    <option value="intercultural">Intercultural Compentence</option>
+                    <option value="life">Life Skills</option>
+                    <option value="social">Social</option>
+                    <option value="wellness">Wellness</option>
+
+                </select>
+                <br>
+                <label for ="type">Type of Program</label> 
+                <select>
+                    <option value="hallWide">Hall Wide Program</option>
+                    <option value="floor">Floor Program</option>
                 </select>
                 <br>
                 <label for ="programDate">Program Date and Time</label>
@@ -72,10 +91,10 @@
                 <br>
                 <label for="programName">Program Name</label>
                 <input type ="text" id="programName"></input>
-
+                <br>
                 <label for="programDiscription">Program Description</label>
                 <input type ="text" id="programDiscription"></input>
-
+                <br>
                 <input type ="submit" value="Submit" placeholder="Program Name"></label>
             
             </form>
