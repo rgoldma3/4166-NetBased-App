@@ -155,11 +155,9 @@ section .dets{
 
 /*Home*/
 .column {
-    float: left;
-    padding: 5px;
+    float: center;
+    padding: 1px;
     flex: 33.33%;
-    width: 30%;
-    height: 30%;
   }
   
   .welcome img{
@@ -169,7 +167,6 @@ section .dets{
   .row{
       display: flex;
       box-sizing: border-box;
-
   }
 
   .gallary{
@@ -200,7 +197,7 @@ section .dets{
   .welcome ul{
       padding: 80px;
       text-align: center;
-      text-decoration: none;
+      text-decoration:none;
 }
 
 /*
